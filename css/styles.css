@@ -9615,6 +9615,15 @@ tr {
     margin-right: 0;
   }
 
+  .register .button{
+    display: none;
+  }
+  .logo-box .logo img{
+    height: 58px;
+  }
+  .card h2{
+    font-size: 30px;
+  }
   .footer .wd-social span {
     display: none;
   }
@@ -10326,6 +10335,9 @@ tr {
 
   .layout-wrap .main-content-inner .wrapper-content .wd-filter {
     grid-template-columns: 1fr;
+  }
+  .card h2{
+    font-size: 24px;
   }
 
   h1,
