@@ -1808,7 +1808,7 @@ p {
   margin-bottom: 20px;
 }
 
-.button {
+.card-button {
   display: inline-block;
   padding: 10px 20px;
   background-color: rgb(54, 120, 159);
@@ -1818,7 +1818,7 @@ p {
   transition: background-color 0.3s ease;
 }
 
-.button:hover {
+.card-button:hover {
   background-color: #000;
 }
 /* two cards end */
@@ -4423,12 +4423,12 @@ p {
   --left: 0;
 }
 .boxes .box > div:nth-child(2) {
-  --background: #b20e14;
+  --background: #000;
   --right: 0;
   --rotateY: 90deg;
 }
 .boxes .box > div:nth-child(3) {
-  --background: #e11219;
+  --background: #000;
   --rotateX: -90deg;
 }
 .boxes .box > div:nth-child(4) {
@@ -9207,6 +9207,47 @@ tr {
 /*-------------- Responsive ----------------- */
 /* Media Queries
 -------------------------------------------------------------- */
+
+/* chatgpt */
+@media (max-width: 1024px) {
+  .card {
+      flex: 1 1 45%; /* Cards will take up 45% of the container's width */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+      flex: 1 1 100%; /* Cards will take up the full width of the container */
+      max-width: 100%;
+  }
+
+  .button {
+      padding: 12px;
+      font-size: 1em;
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+      padding: 15px;
+  }
+
+  h2 {
+      font-size: 1.2em;
+  }
+
+  p {
+      font-size: 0.9em;
+  }
+
+  .button {
+      padding: 10px;
+      font-size: 0.9em;
+  }
+}
+/* chatgpt */
+
 @media only screen and (min-width: 1520px) {
   .tf-sw-testimonial:hover {
     cursor: url("../images/avatar/cursor-sw.png"), auto;
