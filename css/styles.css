@@ -9371,6 +9371,7 @@ tr {
       padding: 10px;
       font-size: 0.9em;
   }
+ 
 }
 /* chatgpt */
 
@@ -9425,6 +9426,7 @@ tr {
   .flat-slider .heading br {
     display: none;
   }
+  
 }
 @media only screen and (max-width: 1800px) {
   .layout-wrap .wrap-table table tbody td:nth-child(3) {
@@ -9813,9 +9815,13 @@ tr {
     line-height: 58px;
   }
 
-  .flat-section {
+  /* .flat-section {
     padding: 60px 0px 60px;
+  } */
+  .flat-section {
+    padding-top: 230px;
   }
+ 
 
   .flat-blog-list {
     padding-right: 0;
@@ -10591,11 +10597,7 @@ h3 {
   flex-direction: row;
   
  }
-  .navbar {
-    padding: 5px;
-  }
-
-  .nav-section {
+ .nav-section {
     margin: 15px 0;
     
   }
@@ -10610,5 +10612,8 @@ h3 {
 
   .navbar ul li a {
     font-size: 0.9rem;
+  }
+  .flat-section{
+    padding-top: 250px;
   }
 }
