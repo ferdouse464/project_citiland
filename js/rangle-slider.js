@@ -75,10 +75,10 @@ $(document).ready(function () {
       prefix: "£",
     });
     noUiSlider.create(rangeSlider, {
-      start: [100, 650000],
+      start: [50000, 20000000],
       step: 1,
       range: {
-        min: [1000000],
+        min: [50000 ],
         max: [20000000],
       },
       format: moneyFormat,
