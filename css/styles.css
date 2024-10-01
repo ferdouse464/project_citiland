@@ -924,7 +924,7 @@ label {
   height: 100%;
 }
 .menu li {
-  margin: 20px 0;
+  margin-top: 20px;
   font-size: 24px;
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -1891,7 +1891,7 @@ label {
 /* two buttons start end*/
 /* two cards start */
 .cards{
-  padding: 150px 0px 40px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -2505,7 +2505,7 @@ p {
   z-index: 123;
 }
 .flat-slider.home-1 {
-  background-image: url(../images/slider/herobg.jpg);
+  background-image: url(../images/slider/herobg1.jpg);
   background-attachment: fixed;
 }
 .flat-slider.home-1 .overlay {
@@ -2515,7 +2515,7 @@ p {
 .flat-slider.home-1 .slider-content {
   position: relative;
   z-index: 1;
-  padding: 70px 0px;
+  padding-top: 180px;
 }
 .flat-slider.home-1 .slider-content .heading {
   margin-bottom: 40px;
@@ -3306,6 +3306,7 @@ p {
 .wd-find-select .inner-group {
   padding: 5px;
   padding-right: 30px;
+  padding-left: 20px;
   flex-wrap: nowrap;
   display: flex;
   gap: 20px;
@@ -9339,6 +9340,9 @@ tr {
   .card {
       flex: 1 1 45%; /* Cards will take up 45% of the container's width */
   }
+  .flat-slider{
+    height: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -9352,6 +9356,9 @@ tr {
       font-size: 1em;
       /* width: 100%; */
   }
+  /* .letting{
+    padding-top: 50px;
+  } */
 }
 
 @media (max-width: 480px) {
@@ -9371,8 +9378,67 @@ tr {
       padding: 10px;
       font-size: 0.9em;
   }
+  .d-flex{
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+   .nav-section {
+      margin: 15px 0;
+      
+    }
+  
+    .navbar h2 {
+      font-size: 1.1rem;
+    }
+  
+    .navbar ul li {
+      margin-bottom: 5px;
+    }
+  
+    .navbar ul li a {
+      font-size: 0.9rem;
+    }
+    .letting h4{
+      padding-top: 100px;
+    }
+    .ham-menu{
+      padding-top: 100px;
+    }
+    .menu li{
+      margin-top: 10px;
+    }
+    .main-header .logo-box .logo img{
+      width: 150px;
+      height: 50px;
+    }
+  }
+  @media (max-width: 390px) {
+    .letting h4{
+      padding-top: 100px;
+    }
+    .main-header .logo-box .logo img{
+      width: 150px;
+      height: 50px;
+    }
+   
+    .menu li{
+      margin-top: 7px;
+    }
+   
+    /* .ham-menu{
+      padding-top: 100px;
+    } */
+    
+  }
+  @media (max-width: 375px) {
+    .letting h4{
+      padding-top: 250px;
+    }
+    
+  }
  
-}
+
+
 /* chatgpt */
 
 @media only screen and (min-width: 1520px) {
@@ -9745,6 +9811,9 @@ tr {
   .wrap-dashboard-content-2 .grid-4 {
     grid-template-columns: 1fr 1fr;
   }
+  .flat-slider{
+    height: 100vh;
+  }
 }
 @media only screen and (max-width: 991px) {
   .header-search .nav-outer .outer-search {
@@ -9815,11 +9884,8 @@ tr {
     line-height: 58px;
   }
 
-  /* .flat-section {
-    padding: 60px 0px 60px;
-  } */
-  .flat-section {
-    padding-top: 230px;
+ .letting{
+    padding-top: 200px;
   }
  
 
@@ -9841,7 +9907,9 @@ tr {
     font-size: 46px;
     line-height: 58px;
   }
-
+  .flat-slider{
+    height: 70vh;
+  }
   .flat-slider.home-1 .slider-content {
     padding: 100px 0px;
   }
@@ -10568,7 +10636,7 @@ h3 {
     margin: 0;
   }
   .navbar ul li {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
 }
 
@@ -10591,29 +10659,3 @@ h3 {
   }
 }
 
-@media (max-width: 480px) {
- .d-flex{
-  flex-wrap: wrap;
-  flex-direction: row;
-  
- }
- .nav-section {
-    margin: 15px 0;
-    
-  }
-
-  .navbar h2 {
-    font-size: 1.1rem;
-  }
-
-  .navbar ul li {
-    margin-bottom: 5px;
-  }
-
-  .navbar ul li a {
-    font-size: 0.9rem;
-  }
-  .flat-section{
-    padding-top: 250px;
-  }
-}

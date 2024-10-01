@@ -3,7 +3,17 @@
  * Contact Form
  * Header Fixed
  * alert box
+ * hamburger menu
  */
+
+// hambuger menu
+function toggleMenu() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.getElementById('menu');
+  menuToggle.classList.toggle('active');
+  menu.classList.toggle('active');
+}
+// hambuger menu
 
 (function ($) {
   "use strict";
