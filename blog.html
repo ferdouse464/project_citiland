@@ -15,6 +15,7 @@
    <link rel="stylesheet" href="fonts/fonts.css">
    <!-- Icons -->
    <link rel="stylesheet" href="fonts/font-icons.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet"type="text/css" href="css/styles.css"/>
 
@@ -44,24 +45,84 @@
     </div>
     
     <!-- /preload -->
+     <div class="blog-banner">
+         
+     </div>
+    <div class="container">
+        <div class="blog-content d-flex justify-content-center gap-8">
+            <div class="col-xl-9 blogbg">
+                <div class="author">By Jhon Doe</div>
+            <div class="date">24th January 2024</div>
+            <h1 class="pt-3 fw-5">Unveiling the Blueprint for Building Gains in Housing Stocks: A Comprehensive Guide to Trading the Sector</h1>
+            <div class="content">
+                <p>The housing sector has long been a focal point for investors seeking lucrative opportunities. With the ever-growing demand for housing and the dynamic nature of real estate markets, there are ample possibilities for building substantial gains in housing stocks. This article will provide a comprehensive guide on how to strategically approach and trade within the housing sector to maximize profits.</p>
+                <h2>Understanding the Housing Market Dynamics:</h2>
+                <ol>
+                    <li><strong>Macro Economic Factors:</strong> Begin by analyzing macro-economic indicators such as interest rates, unemployment rates, and GDP growth. These factors have a significant impact on the housing market and can influence the performance of housing stocks.</li>
+                    <li><strong>Supply and Demand Dynamics:</strong> Evaluate the balance between housing supply and demand in specific regions. A shortage in housing supply often leads to increased home prices, benefiting companies involved in real estate development.</li>
+                    <li><strong>Government Policies:</strong> Keep a close eye on government policies related to the housing market, including tax incentives, subsidies, and regulations. Changes in government initiatives can have a profound effect on the sector.</li>
+                </ol>
+                <!-- More content here -->
+            </div>
+            <div class="engagement">
+                <a href="#"><i class="fa-solid fa-thumbs-up"> 1203 Like</i>
+                <a href="#"><i class="fa-solid fa-thumbs-down"> 5 Dislike</i></a>
+                <a href="#"><i class="fa-solid fa-comments"> 1 Comment</i></a>
+                <a href="#"><i class="fa-solid fa-share"> Share Post</i></a>
+                
+            </div>
+            <div class="user-comment">
+                <div class="comment">
+                    <strong class="fw-bold">Jhon Doe</strong>
+                    <p><span class="fw-bold fs-6">Commented</span> on 24th January 2024</p>
+                    <p>Building gains in housing stocks requires a nuanced understanding of market dynamics, thorough research, and strategic decision-making. By staying informed about macro-economic factors, identifying promising stocks, and implementing effective trading strategies, investors can navigate the housing sector successfully and capitalize on the wealth of opportunities it presents.</p>
+                </div>
+                <div class="reply mt-2 mx-3">
+                    <strong class="fw-bold">Chris Morris</strong>
+                    <p><span class="fw-bold fs-6">Replied</span> 19 mins ago</p>
+                    <p>By staying informed about macro-economic factors, identifying promising stocks, and implementing effective trading strategies, investors can navigate the housing sector successfully and capitalize on the wealth of opportunities it presents.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xl-3">
+            <div class="valuation-card">
+                <div>
+                    <h3>How much is your property worth?</h3>
+                    <button class="blogBtn valuation rounded-pill"><small>REQUEST A VALUATION</small></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
-    <div id="wrapper">
+    <script>
+        window.addEventListener('scroll', function() {
+            var card = document.querySelector('.valuation-card');
+            if (window.scrollY <90) {
+                card.style.position = 'sticky';
+            } else {
+                card.style.display = 'block';
+            }
+        });
+    </script>
+
+    <!-- <div id="wrapper">
         <div id="pagee" class="clearfix">
-
-            <!-- Main Header -->
-            <header class="main-header fixed-header">
+ Main Header -->
+            <!-- <header class="main-header fixed-header"> -->
                 <!-- Header Lower -->
-                <div class="header-lower">
+                <!-- <div class="header-lower">
                     <div class="row">                      
                         <div class="col-lg-12">         
-                            <div class="inner-container d-flex justify-content-between align-items-center">
+                            <div class="inner-container d-flex justify-content-between align-items-center"> -->
                                 <!-- Logo Box -->
-                                <div class="logo-box flex">
+                                <!-- <div class="logo-box flex">
                                     <div class="logo"><a href="index.html"><img src="images/logo/logo@2x.png" alt="logo" width="174" height="44"></a></div>
-                                </div>
-                                <div class="nav-outer flex align-center">
+                                </div> -->
+                                <!-- <div class="nav-outer flex align-center"> -->
                                     <!-- Main Menu -->
-                                    <nav class="main-menu show navbar-expand-md">
+                                    <!-- <nav class="main-menu show navbar-expand-md">
                                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                                             <ul class="navigation clearfix">
                                                 <li class="dropdown2 home"><a href="#">Home</a>
@@ -126,10 +187,10 @@
                                                 
                                             </ul>
                                         </div>
-                                    </nav>
+                                    </nav> -->
                                     <!-- Main Menu End-->
-                                </div>
-                                <div class="header-account">
+                                <!-- </div> -->
+                                <!-- <div class="header-account">
                                     <div class="register">
                                         <ul class="d-flex">
                                             <li><a href="#modalLogin" data-bs-toggle="modal">Login</a></li>
@@ -147,11 +208,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- End Header Lower -->
             
                 <!-- Mobile Menu  -->
-                <div class="close-btn"><span class="icon flaticon-cancel-1"></span></div>    
+                <!-- <div class="close-btn"><span class="icon flaticon-cancel-1"></span></div>    
                 <div class="mobile-menu">
                     <div class="menu-backdrop"></div>                            
                     <nav class="menu-box">
@@ -178,13 +239,13 @@
                             </div>
                         </div>
                     </nav>                
-                </div>
+                </div> -->
                 <!-- End Mobile Menu -->
             
-            </header>
+            <!-- </header> -->
             <!-- End Main Header -->
             <!-- Page Title -->
-            <section class="flat-title-page">
+            <!-- <section class="flat-title-page">
                 <div class="container">
                     <h2 class="text-center">Latest News</h2>
                    
@@ -194,11 +255,11 @@
                     </ul>
                     
                 </div>
-            </section>
+            </section> -->
             <!-- End Page Title -->
 
             <!-- Section Blog List -->
-            <section class="flat-section">
+            <!-- <section class="flat-section">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8">
@@ -345,12 +406,12 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!--End Section Blog List -->
       
 
             <!-- footer -->
-            <footer class="footer">
+            <!-- <footer class="footer">
                 <div class="top-footer">
                   <div class="container">
                     <div class="content-footer-top">
@@ -468,27 +529,27 @@
                     </div>
                   </div>
                 </div>
-            </footer>
+            </footer> -->
             <!-- end footer -->
             
 
-        </div>
+        <!-- </div> -->
         <!-- /#page -->
 
-    </div>
+    <!-- </div> --> 
 
 
 
     <!-- go top -->
-    <div class="progress-wrap">
+    <!-- <div class="progress-wrap">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 286.138;"></path>
         </svg>
-    </div>
+    </div> -->
 
 
     <!-- popup login -->
-    <div class="modal fade" id="modalLogin">
+    <!-- <div class="modal fade" id="modalLogin">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="flat-account bg-surface">
@@ -537,9 +598,9 @@
                 </div>
             </div> 
         </div>
-    </div>
+    </div> -->
     <!-- popup register -->
-    <div class="modal fade" id="modalRegister">
+    <!-- <div class="modal fade" id="modalRegister">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="flat-account bg-surface">
@@ -581,8 +642,65 @@
                 </div>
             </div> 
         </div>
-    </div>
+    </div> -->
 
+
+    <!-- footer -->
+    <footer>
+        <div class="">
+            <div class="footer-content">
+                <div class="footercol col-xl-2 col-sm-6">
+                    <div class="footer-section">
+                        <h2>WELCOME</h2>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Area Guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footercol col-xl-2 col-sm-6">
+                    <div class="footer-section">
+                        <h2>SALE</h2>
+                        <ul>
+                            <li><a href="#">Sale</a></li>
+                            <li><a href="#">Selling Guide</a></li>
+                            <li><a href="#">Buying Guide</a></li>
+                            <li><a href="#">Properties for Sale</a></li>
+                            <li><a href="#">New Homes</a></li>
+                            <li><a href="#">View Shortlist</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footercol col-xl-2 col-sm-6">
+                    <div class="footer-section">
+                        <h2>LETTINGS</h2>
+                        <ul>
+                            <li><a href="#">Lettings</a></li>
+                            <li><a href="#">Landlord Guide</a></li>
+                            <li><a href="#">Tenant Guide</a></li>
+                            <li><a href="#">Properties for Rent</a></li>
+                            <li><a href="#">Repairs and Maintenance</a></li>
+                            <li><a href="#">Landlord Fees</a></li>
+                            <li><a href="#">View Shortlist</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footercol col-xl-2 col-sm-6">
+                    <div class="footer-section">
+                        <h2>CONTACT</h2>
+                        <p>0207 846 5998</p>
+                        <p>info@citilandhome.co.uk</p>
+                        <button class="report-button button valuation rounded-pill">REPORT A REPAIR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom ">
+            <p>© 2024 CITILORD Agency | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy & Notice</a> | <a href="#">Cookies Policy</a> | <a href="#">Cookie Preferences</a> | <a href="#">CMP Certificates</a> | <a href="#">Complaints Procedure</a> | Developed by Optimistic Solutions</p>
+        </div>
+    </footer>
+    <!-- footer -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/plugin.js"></script>

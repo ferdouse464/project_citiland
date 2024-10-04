@@ -15,6 +15,18 @@ function toggleMenu() {
 }
 // hambuger menu
 
+// pop up
+window.onload = function() {
+  document.getElementById('popup-overlay').style.display = 'block';
+  document.getElementById('popup').style.display = 'block';
+};
+
+document.getElementById('closeBtn').onclick = function() {
+  document.getElementById('popup-overlay').style.display = 'none';
+  document.getElementById('popup').style.display = 'none';
+};
+// pop up
+
 (function ($) {
   "use strict";
 
