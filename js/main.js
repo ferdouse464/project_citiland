@@ -13,7 +13,16 @@ function toggleMenu() {
   menuToggle.classList.toggle('active');
   menu.classList.toggle('active');
 }
-// hambuger menu
+
+
+// advance button
+const closeButton = document.querySelector('.advance-close-btn');
+// const boxFilter = document.querySelector('.box-filter');
+
+closeButton.addEventListener('click', () => {
+// boxFilter.style.display = 'none';
+});
+
 
 // pop up
 window.onload = function() {
