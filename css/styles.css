@@ -2461,8 +2461,8 @@ p {
 .sponsor{
   /* margin-top: 50px; */
   margin-bottom: 0px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   background-color: #F7F7F7;
 }
 .logo-container {
@@ -6333,7 +6333,37 @@ p {
 .wrap-benefit-v2 .box-navigation {
   margin-top: 30px;
 }
+/* property details */
+.property-tabs-btn{
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    height: 50px;
+    bottom: 25px;
+    visibility: hidden;
+    z-index: 101;
+}
+.property-tabs-btn .tabs-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.property-tabs-btn .tab-btn{
+    font-family: "Josefin Sans", sans-serif;
+    padding: 10px;
+    background-color: #36789F;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    opacity: 0.9;
+    z-index: 103;
+    visibility: visible;
 
+}
 .wrap-property {
   display: flex;
   gap: 30px;
@@ -9539,6 +9569,9 @@ footer {
     border-radius: 25px;
     cursor: pointer;
 }
+.report-button.button{
+  margin: 0;
+}
 
 
 .report-button:hover {
@@ -9550,8 +9583,152 @@ footer {
 /*-------------- Responsive ----------------- */
 /* Media Queries
 -------------------------------------------------------------- */
+@media only screen and (max-width: 1880px) and (min-width: 1278px) {
+    .valuation-home-card{
+      margin-top: -50px;
+    }
+  }
+@media only screen and (max-width: 1277px) and (min-width: 1200px) {
+    .valuation-home-card{
+      margin-top: -70px;
+    }
+  }
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .valuation-home-card{
+      margin-top: -80px;
+    }
+    .footer-content .col-sm-6{
+      width: 0%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+@media only screen and (max-width: 991px) and (min-width: 800px) {
+    .valuation-home-card{
+      margin-top: -70px;
+    }
+    .footer-content .col-sm-6{
+      width: 0%;
+      display: flex;
+      justify-content: center;
+    }
+    .footer-content .footer-section h2{
+      font-size: 20px;
+    }
+    
+  }
+@media only screen and (max-width: 906px) and (min-width: 769px) {
+  .engagement a{
+    font-size: 8px !important;
+    padding: 5px !important;
+  }
+  }
+@media only screen and (max-width: 503px) and (min-width: 407px) {
+  .engagement a{
+    font-size: 10px !important;
+    padding: 5px !important;
+  }
+  }
+@media only screen and (max-width: 406px) and (min-width: 350px) {
+  .engagement a{
+    font-size: 8px !important;
+    padding: 5px !important;
+  }
+  }
+@media only screen and (max-width: 349px) and (min-width: 300px) {
+  .engagement a{
+    font-size: 6px !important;
+    padding: 5px !important;
+  }
+  }
+@media only screen and (max-width: 799px) and (min-width: 653px) {
+    .valuation-home-card{
+      margin-top: -70px;
+    }
+    .footer-content .col-sm-6{
+      width:10%;
+      display: flex;
+      justify-content: center;
+    }
+    .footer-content .footer-section h2{
+      font-size: 20px;
+    }
+    .footer-section .report-button{
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+   
+  }
+@media only screen and (max-width: 652px) and (min-width: 645px) {
+    .valuation-home-card{
+      margin-top: -90px;
+    }
+    .footer-content .col-sm-6{
+      width: 0%;
+      display: flex;
+      justify-content: center;
+    }
+    .footer-content .footer-section h2{
+      font-size: 20px;
+    }
+    .footer-section .report-button{
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+  }
+@media only screen and (max-width: 644px) and (min-width: 300px) {
+    .valuation-home-card{
+      margin-top: 400px;
+      width: 100%!important;
+      right: 0 !important;
+    }
+   
+   
+    .footer-content .footer-section h2{
+      font-size: 20px;
+    }
+    .footer-section .report-button{
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+    .footer-bottom{
+      padding-bottom:200px ;
+    }
+    .blogbg{
+      padding: 0px !important;
+      padding-left: 6px !important;
+    }
+    .blog-footer .footer-bottom{
+      padding-bottom: 10px;
+    }
+    .blog-content h1{
+      font-size: 25px !important;
+    }
+    .blog-content h2{
+      font-size: 25px !important;
+    }
+    
 
-/* chatgpt */
+  }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1800px) {
   .layout-wrap .wrap-table table tbody td:nth-child(3) {
     padding-left: 20px;
@@ -9959,9 +10136,7 @@ footer {
   }
  
 }
-@media only screen and (min-width: 375px) and (max-width: 539px) {
- 
-}
+
 
 @media only screen and (max-width: 375px) {
   .flat-tab-form{
@@ -10466,6 +10641,7 @@ footer {
     margin-top: 7px;
   }
  
+ 
 }
 
 
@@ -10794,14 +10970,14 @@ footer {
     font-size: 24px;
   }
 
-  h1,
+h1,
 h2,
-h3 {
+h3{
     font-size: 40px;
     line-height: 58px;
   }
 
-  h4 {
+h4{
     font-size: 32px;
     line-height: 40px;
   }
@@ -10853,11 +11029,13 @@ h3 {
     margin-top: 250px;
   }
 }
-@media only screen and (max-width: 540px) and (min-width: 300px)  {
+@media only screen and (max-width: 540px) and (min-width: 312px)  {
   .letting{
-    margin-top: 150px;
+    margin-top: 190px;
   }
+  
 }
+
 
 
 
@@ -10956,29 +11134,34 @@ h3 {
   margin-top: 20px;
   
 }
-.valuation-card-home{
-  right: 4px;
-  top: 332px;
+/*  */
+.valuation-home-card {
   position: fixed;
+  right: 20px;
   background-color: white;
+  color: white;
   padding: 50px 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  width: 280px;
+  transition: top 0.3s ease-out;
+  z-index: 10;
 }
+
 .valuation-card {
   position: fixed;
   top: 380px;
   background-color: white;
   padding: 50px 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
   width: 300px;
 }
-.valuation-card h3,.valuation-card-home h3 {
+.valuation-card h3,.valuation-home-card h3 {
   font-size: 20px;
   line-height: 18px;
   margin-bottom: 10px;
 }
-.valuation-card .blogBtn,.valuation-card-home .blogBtn {
+.valuation-card .blogBtn,.valuation-home-card .blogBtn {
   background-color: #d7a79f;
   border: none;
   color: white;
@@ -11027,3 +11210,10 @@ h3 {
   color: rgb(54, 120, 159);
 }
 /* blog details */
+
+
+
+
+/*  */
+
+/*  */

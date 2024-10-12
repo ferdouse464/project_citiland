@@ -28,10 +28,7 @@
 </head>
 
 <body class="body counter-scroll">
-    <!--  -->
     
-
-    <!--  -->
    <div class="preload preload-container">
         <div class="boxes ">
             <div class="box">
@@ -49,8 +46,28 @@
         </div>
     </div>
     <!-- /preload -->
-     
-        <div id="pagee" class="clearfix">
+      <!--valuation side card start -->
+     <div class="valuation-home-card" id="scrollingPopup">
+        <h3>How much is your property worth?</h3>
+        <button class="blogBtn valuation rounded-pill"><small>REQUEST A VALUATION</small></button>
+    </div>
+      
+    <script>
+        const popup = document.getElementById('scrollingPopup');
+        
+
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.pageYOffset;
+            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercentage = scrollPosition / maxScroll;
+            const newPosition = 10 + (scrollPercentage * 24); // Move between 10% and 90% of viewport height
+
+            popup.style.top = `${newPosition}vh`;
+            scrollPositionElem.textContent = Math.round(scrollPosition);
+        });
+    </script>
+  <!--valuation side card end -->
+     <div id="pagee" class="clearfix">
             <!-- Main Header -->
             <header class="main-header fixed-header">
                 <!-- Header Lower -->
@@ -66,73 +83,7 @@
                                     <!-- Main Menu -->
                                     <nav class="main-menu show navbar-expand-md">
                                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-                                            <!-- <ul class="navigation clearfix">
-                                                <li class="dropdown2 home current"><a href="#">Home</a>
-                                                <li class="home current"><a href="#">Home</a>
-                                                    <ul>
-                                                        <li class="current"><a href="index.html">Homepage 01</a></li>
-                                                        <li><a href="home-02.html">Homepage 02</a></li>
-                                                        <li><a href="home-03.html">Homepage 03</a></li>
-                                                        <li><a href="home-04.html">Homepage 04</a></li>
-                                                        <li><a href="home-05.html">Homepage 05</a></li>
-                                                        <li><a href="home-06.html">Homepage 06</a></li>
-
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown2"><a href="#">About Us</a>
-                                                <li class=""><a href="#">About Us</a>
-                                                    <ul>
-                                                        <li><a href="property-halfmap-grid.html">Property Half Map Grid</a>
-                                                            
-                                                        </li>
-                                                        <li><a href="property-halfmap-list.html">Property Half Map List</a></li>
-                                                        <li><a href="topmap-grid.html">Find Topmap Grid</a></li>
-                                                        <li><a href="topmap-list.html">Find Topmap List</a></li>
-                                                        <li><a href="sidebar-grid.html">Find Sidebar Grid</a></li>
-                                                        <li><a href="sidebar-list.html">Find Sidebar List</a></li>
-
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown2"><a href="#">Properties</a>
-                                                    <ul>
-                                                        <li><a href="#">Property Details 1</a></li>
-                                                        <li><a href="#">Property Details 2</a></li>
-                                                        <li><a href="#">Property Details 3</a></li>
-                                                        <li><a href="#">Property Details 4</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown2"><a href="#">Pages</a>
-                                                    <ul>
-                                                        <li><a href="about-us.html">About Us</a></li>
-                                                        <li><a href="our-service.html">Our Services</a></li>
-                                                        <li><a href="pricing.html">Pricing</a></li>
-                                                        <li><a href="contact.html">Contact Us</a></li>
-                                                        <li><a href="faq.html">FAQs</a></li>
-                                                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                                        <li><a href="icon.html">Icons</a></li>
-
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown2"><a href="#">Blog</a>
-                                                    <ul>
-                                                        <li><a href="blog.html">Blog Default</a></li>
-                                                        <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                        <li><a href="blog-detail.html">Blog Post Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                
-                                                <li class="dropdown2"><a href="#">Dashboard</a>
-                                                    <ul>
-                                                        <li><a href="dashboard.html">Dashboard</a></li>
-                                                        <li><a href="my-favorites.html">My Properties</a></li>
-                                                        <li><a href="my-invoices.html">My Invoices</a></li>
-                                                        <li><a href="my-favorites.html">My Favorites</a></li>
-                                                        <li><a href="reviews.html">Reviews</a></li>
-                                                        <li><a href="my-profile.html">My Profile</a></li>
-                                                        <li><a href="add-property.html">Add Property</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul> -->
+                                            
                                         </div>
                                     </nav>
                                     <!-- Main Menu End-->
@@ -195,13 +146,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                             <!-- <ul class="menu" id="menu">
-                                                <li><a href="#">Home</a></li>
-                                                <li><a href="#">About</a></li>
-                                                <li><a href="#">Services</a></li>
-                                                <li><a href="#">Contact</a></li>
-                                            </ul>
-                                         -->
+                                            
                                          </div>
                                         <!-- hamburger menu end -->
                                     </div>
@@ -215,37 +160,9 @@
                     </div>
                 </div>
                 <!-- End Header Lower -->
-                 <!-- Mobile Menu  -->
-                <!-- <div class="close-btn"><span class="icon flaticon-cancel-1"></span></div>    
-                <div class="mobile-menu">
-                    <div class="menu-backdrop"></div>                            
-                    <nav class="menu-box">
-                        <div class="nav-logo"><a href="index.html"><img src="images/logo/logo@2x.png" alt="nav-logo" width="174" height="44"></a></div>
-                        <div class="bottom-canvas">
-                            <div class="login-box flex align-items-center">
-                                <a href="#modalLogin" data-bs-toggle="modal">Login</a>
-                                <span>/</span>
-                                <a href="#modalRegister" data-bs-toggle="modal">Register</a>
-                            </div>
-                            <div class="menu-outer"></div>
-                            <div class="button-mobi-sell">
-                                <a class="tf-btn primary" href="add-property.html">Submit Property</a>
-                            </div> 
-                            <div class="mobi-icon-box">
-                                <div class="box d-flex align-items-center">
-                                    <span class="icon icon-phone2"></span>
-                                    <div>1-333-345-6868</div>
-                                </div>
-                                <div class="box d-flex align-items-center">
-                                    <span class="icon icon-mail"></span>
-                                    <div>themesflat@gmail.com</div>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>                
-                </div> -->
-                <!-- End Mobile Menu -->
+               
             </header>
+
             <!-- End Main Header -->
             <!-- Slider -->
             <section class="flat-slider home-1">
@@ -841,12 +758,11 @@
                 </div>
                 <div class="overlay"></div>
             </section> 
-            <!-- <div class=" valuation-card-home">
-                <div>
-                    <h3>How much is your property worth?</h3>
-                    <button class="blogBtn valuation rounded-pill"><small>REQUEST A VALUATION</small></button>
-                </div>
-            </div> -->
+            
+             
+            
+              
+            
             <!-- End Slider -->
             <!-- Recommended -->
             <section class="flat-section flat-recommended">
@@ -5979,7 +5895,7 @@
                                 <div class="col-xl-4 col-lg-6 col-md-6">
                                     <div class="homeya-box">
                                         <div class="archive-top">
-                                            <a href="#" class="images-group">
+                                            <a href="/blog.html" class="images-group">
                                                 <div class="images-style">
                                                     <img src="images/home/watermarkImg.PNG" alt="img">
                                                 </div>
@@ -6003,7 +5919,7 @@
                                 <div class="col-xl-4 col-lg-6 col-md-6">
                                     <div class="homeya-box">
                                         <div class="archive-top">
-                                            <a href="#" class="images-group">
+                                            <a href="/blog.html" class="images-group">
                                                 <div class="images-style">
                                                     <img src="images/home/watermarkImg.PNG" alt="img">
                                                 </div>
@@ -6027,7 +5943,7 @@
                                 <div class="col-xl-4 col-lg-6 col-md-6">
                                     <div class="homeya-box">
                                         <div class="archive-top">
-                                            <a href="#" class="images-group">
+                                            <a href="/blog.html" class="images-group">
                                                 <div class="images-style">
                                                     <img src="images/home/watermarkImg.PNG" alt="img">
                                                 </div>
@@ -7634,40 +7550,7 @@
                 </div>
             </section>
             <!-- End Agents -->
-            <!-- sponsor start -->
-            <!-- <div class="container ">
-                <div class="box-title text-center wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                    <div class="text-subtitle text-black">Regulated By</div>
-                </div>
-                <div class="sponser row">
-                    <div class="col-xl-2 col-lg-6 col-md-6">
-                        <div class="sponser-img">
-                            <img src="images/sponsor/sponsor1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-6 col-md-6">
-                        <div class="sponser-img">
-                            <img src="images/sponsor/sponsor2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-6 col-md-6">
-                        <div class="sponser-img">
-                            <img src="images/sponsor/sponsor3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-6 col-md-6 ">
-                        <div class="sponser-img">
-                            <img src="images/sponsor/sponsor4.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-6 col-md-6">
-                        <div class="sponser-img">
-                            <img src="images/sponsor/sponsor5.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-             </div> -->
-            <!-- sponsor end -->
+            
             <!-- about us -->
             <!-- End Agents -->
             <!-- Latest New -->
@@ -7776,6 +7659,7 @@
                 </div>
             </div>
             <!-- popup end -->
+            
             <footer>
                 <div class="">
                     <div class="footer-content">
@@ -7827,13 +7711,13 @@
                     </div>
                 </div>
                 <div class="footer-bottom ">
-                    <p>© 2024 CITILORD Agency | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy & Notice</a> | <a href="#">Cookies Policy</a> | <a href="#">Cookie Preferences</a> | <a href="#">CMP Certificates</a> | <a href="#">Complaints Procedure</a> | Developed by Optimistic Solutions</p>
+                    <p><a href="">© 2024 CITILAND HOME </a> | <a href="">Terms of Use</a> | <a href="">Privacy Policy & Notice</a> | <a href="">Cookies Policy</a> | <a href="">Cookie Preferences</a> | <a href="/documents/cmp.pdf">CMP Certificates</a> | <a href="/documents/Accredited By.pdf">Accredited By</a> | <a href="/documents/NRLA.png">NRLA</a> | <a href="/documents/Registration Certificate - ZB691728.pdf">ICO</a> | <a href="">Complaints Procedure</a> | <a href="">Developed by Optimistic Solutions</a></p>
                 </div>
             </footer>
             <!-- footer end -->
         </div>
         <!-- /#page -->
-
+        
     </div>
 
 
