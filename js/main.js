@@ -22,6 +22,28 @@ const closeButton = document.querySelector('.advance-close-btn');
 closeButton.addEventListener('click', () => {
 // boxFilter.style.display = 'none';
 });
+// valuation-home-card start
+  //  window.addEventListener('scroll', function() {
+  //         var card = document.querySelector('.valuation-home-card');
+  //           if (window.scrollY <90) {
+  //               card.style.position = 'sticky';
+  //             } else {
+  //               card.style.display = 'block';
+  //           }
+  //       });
+    
+        window.addEventListener('scroll', function() {
+          var card = document.querySelector('.valuation-home-card');
+            if (window.scrollY <400) {
+                card.style.display = 'none';
+                
+              } else{
+                card.style.display = 'block';
+                card.style.position = 'sticky';
+              }
+        });
+
+// valuation-home-card end
 
 
 // pop up
